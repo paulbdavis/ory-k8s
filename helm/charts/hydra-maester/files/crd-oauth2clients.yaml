@@ -465,6 +465,10 @@ spec:
           - grantTypes
           - scope
           - secretName
+          - hydraURL
+          - hydraPort
+          - hydraEndpoint
+          - hydraForwardedProto
           type: object
         status:
           properties:
@@ -486,7 +490,7 @@ spec:
           type: object
       type: object
   versions:
-  - name: v1alpha1
+  - name: v1alpha3
     served: true
     storage: true
 status:
