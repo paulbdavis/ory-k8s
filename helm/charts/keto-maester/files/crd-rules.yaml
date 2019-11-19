@@ -433,6 +433,11 @@ spec:
               - glob
               - regex
               type: string
+            id:
+              description: ID is the policy id (name). If this is not provided `metadata.name`
+                is used
+              minLength: 1
+              type: string
             keto:
               description: Keto is the optional configuration to use for managing
                 this policy
@@ -904,6 +909,11 @@ spec:
               - exact
               - glob
               - regex
+              type: string
+            id:
+              description: ID is the role id (name). If this is not provided `metadata.name`
+                is used
+              minLength: 1
               type: string
             keto:
               description: Keto is the optional configuration to use for managing
